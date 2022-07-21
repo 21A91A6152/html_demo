@@ -1,0 +1,7 @@
+Structure in c is a user-defined data type that enables us to store the collection of different data types.
+string is defined as  array of characterstics
+An array is a collection of elements of the same type placed in contiguous memory locations.
+A pointer is a variable whose value is the address of another variable.
+malloc is used to allocate a block of memory on the heap
+The calloc() in C is a function used to allocate multiple blocks of memory having the same size 
+.. A function is a group of statements that together perform a task

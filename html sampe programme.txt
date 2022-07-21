@@ -1,0 +1,58 @@
+<html>
+ <head>
+   <title>"first web page"</title>
+ </head>
+ <body>
+   <a href="about.html" target="_blank">about page</a>
+   <center>
+    <h1>welcome to html</h1>
+    <h2>hello</h2>  
+    <h3>this is html class</h3>
+    <h4>enjoy the class well</h4>
+    <p><b>Aditya engeneering college</b> near paddapuram,kakinada.
+   </center
+   <marquee> manoj kumar </marquee>
+   <ol>
+    <li>tea</li>
+    <li>cofee</li>
+    <li>chicken</li>
+    <li>biryani</li>
+   </ol>
+   <ul>
+    <li>tea</li>
+    <li>cofee</li>
+    <li>chicken</li>
+    <li>biryani</li>
+   </ul>
+   <table style="border:1px solid black">
+     
+      <thead>
+       <tr>
+        <td style="border:1px solid black">s.no</td>
+        <td style="border:1px solid black">name</td>
+        <td style="border:1px solid black">subject</td>
+       </tr>
+      </thead>
+      <thead>
+       <tr>
+        <td style="border:1px solid black">1</td>
+        <td style="border:1px solid black">sudhir</td>
+        <td style="border:1px solid black">coding</td>
+       </tr>
+      </thead>
+      <thead>
+       <tr>
+        <td style="border:1px solid black">2</td>
+        <td style="border:1px solid black">shaif</td>
+        <td style="border:1px solid black"c>work shop</td>
+       </tr>
+      </thead>
+     </table>
+
+   <img src="virat.jpg" alt="myimage" height="800px" width="1600px" style="border-radius:100000px;border:200px solid black">
+   
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13193.222535237248!2d82.07376288339955!3d17.099101278499877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a378165aaaaaaab%3A0x481e8b12b4b80715!2sAditya%20Engineering%20College!5e0!3m2!1sen!2sin!4v1643867282228!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Zh9Exwrnzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ </body>
+</html>
