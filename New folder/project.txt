@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div style="height:700px;width:800px;background-color:lightgrey;border:10px solid black;">
+<script>
+var subjectObject = {
+  "CSE": {
+    "1-1": ["english", "maths", "chemistry", "c","cew"],
+    "1-2": ["maths", "physics", "CO", "data structures through c","python"],
+    "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+    "AIML": {
+      "1-1": ["english", "maths", "chemistry", "c","cew"],
+      "1-2": ["maths", "physics", "DLD", "data structures through c","python"],
+      "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+      "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+      "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+      "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+   "IT": {
+    "1-1": ["english", "maths", "chemistry", "c","cew"],
+    "1-2": ["maths", "physics", "DLD", "data structures through c","python"],
+    "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+    "ECE": {
+    "1-1": ["english", "maths", "chemistry", "c","cew"],
+    "1-2": ["maths", "physics", "DLD", "data structures through c","python"],
+    "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+    "MECH": {
+    "1-1": ["english", "maths", "chemistry", "c","cew"],
+    "1-2": ["maths", "physics", "DLD", "data structures through c","python"],
+    "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+    "EEE": {
+    "1-1": ["english", "maths", "chemistry", "c","cew"],
+    "1-2": ["maths", "physics", "DLD", "data structures through c","python"],
+    "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+    "AGRI": {
+    "1-1": ["english", "maths", "chemistry", "c","cew"],
+    "1-2": ["maths", "physics", "DLD", "data structures through c","python"],
+    "2-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "2-2": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-1": ["Variables", "Operators", "Functions", "Conditions"],
+    "3-2": ["Variables", "Operators", "Functions", "Conditions"]
+  },
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>   
+<body>
+
+<h1>SEARCH FOR YOUR PDF'S </h1>
+<center>
+    <style>
+      .option {
+        width: 120px;
+        height: 30px;
+        border: 1px solid #999;
+        font-size: 18px;
+        color: #1c87c9;
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 4px 4px #ccc;
+      }
+    </style>
+
+<form name="form1" id="form1" action="/action_page.php">
+<h2>Subjects:</h2> <select name="subject" id="subject" style="background: 	#00FF00; color: 	#FF0000;">
+    <option value="" selected="selected" size="10" >Select subject</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
+<h2>Topics:</h2> <select name="topic" id="topic" style="background:#00FFFF; color: 	#FF0000;"	>
+    <option value="" selected="selected">Please select subject first</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
+<h3>Chapters:</h3> <select name="chapter" id="chapter" style="background:#C0C0C0; color: 	#FF0000;fontsize:50px;">
+    <option value="" selected="selected",background-color="black";font="arial";>Please select topic first</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="submit" value="Submit"style="background:	#FF00FF; color:#000080">  
+</form>
+</center>
+</body>
+</html>
